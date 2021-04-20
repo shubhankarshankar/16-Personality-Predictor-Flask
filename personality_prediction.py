@@ -19,10 +19,10 @@ trunc_type = "post"
 pad_type = "post"
 oov_tok = "<OOV>"
 embedding_dim = 256
-modelIE = load_model("models/model0.h5")
-modelNS = load_model("models/model1.h5")
-modelFT = load_model("models/model2.h5")
-modelJP = load_model("models/model3.h5")
+modelIE = load_model("models/model_IE.h5")
+modelNS = load_model("models/model_NS.h5")
+modelFT = load_model("models/model_FT.h5")
+modelJP = load_model("models/model_JP.h5")
 
 lemmatiser = WordNetLemmatizer()
 tokenizer = Tokenizer(num_words=vocab_size, oov_token=oov_tok)
